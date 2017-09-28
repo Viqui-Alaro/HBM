@@ -5,11 +5,12 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import com.it.mobile.hansa.hbm.R;
 
 import java.text.DateFormat;
@@ -24,12 +25,16 @@ public class CalendarioMain extends Fragment {
 
 
     private HorizontalCalendar horizontalCalendar;
+    private Toolbar toolbar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View rootView = inflater.inflate(R.layout.fragment_calendario_main, container, false);
+
+        toolbar = (Toolbar)rootView.findViewById(R.id.appbarMain);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
         /** end after 1 month from now */
         Calendar endDate = Calendar.getInstance();
@@ -63,6 +68,5 @@ public class CalendarioMain extends Fragment {
 
         return rootView;
     }
-
 
 }

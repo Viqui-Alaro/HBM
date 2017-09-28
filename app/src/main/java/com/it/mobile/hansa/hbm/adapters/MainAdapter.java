@@ -23,24 +23,16 @@ public class MainAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-        Fragment f = null;
-
         switch (position) {
             case 0:
-                f = new MapaMain();
-                break;
+                return new MapaMain();
             case 1:
-                f = new CalendarioMain();
-                break;
+                return new CalendarioMain();
             case 2:
-                f = new DasboardMain();
-                break;
+                return new DasboardMain();
             default:
-                f = new MapaMain();
-                break;
+                return new MapaMain();
         }
-
-        return  f;
 
     }
 

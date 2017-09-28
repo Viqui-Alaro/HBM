@@ -24,8 +24,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="?attr/actionBarSize" />
 
-        <include android:id="@+id/appbarMain"
-            layout="@layout/toolbar_main" />
+
 
     </RelativeLayout>
 

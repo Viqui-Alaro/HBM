@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.appbarMain);
-        setSupportActionBar(toolbar);
-
-        mSectionsPagerAdapter = new MainAdapter(getSupportFragmentManager());
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.appbarMain);
+        //setSupportActionBar(toolbar);
 
         mViewPager = (ViewPager) findViewById(R.id.container);
+
+        mSectionsPagerAdapter = new MainAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
 
