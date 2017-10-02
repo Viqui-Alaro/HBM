@@ -25,13 +25,13 @@ public class MainAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return new MapaMain();
+                return new DasboardMain();
             case 1:
                 return new CalendarioMain();
             case 2:
-                return new DasboardMain();
-            default:
                 return new MapaMain();
+            default:
+                return new CalendarioMain();
         }
 
     }
