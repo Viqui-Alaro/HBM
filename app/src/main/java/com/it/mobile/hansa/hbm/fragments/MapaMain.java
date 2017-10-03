@@ -12,6 +12,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -62,6 +64,7 @@ public class MapaMain extends Fragment implements OnMapReadyCallback {
 
         toolbar = (Toolbar)view.findViewById(R.id.appbarMapaMain);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        setHasOptionsMenu(true);
 
         return view;
 
@@ -132,5 +135,11 @@ public class MapaMain extends Fragment implements OnMapReadyCallback {
                 Toast.makeText(getContext(), "Error de permisos", Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_toolbar_main, menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 }
