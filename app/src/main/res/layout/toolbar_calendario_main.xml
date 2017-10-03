@@ -16,13 +16,13 @@
         android:orientation="vertical"
         android:paddingBottom="16dp" >
 
-        <TextView android:id="@+id/tvTitulo"
+        <TextView android:id="@+id/tvUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mapa de actividades"
+            android:text="@string/ActionbarUsuario"
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
 
-        <TextView android:id="@+id/tvSubtitulo"
+        <TextView android:id="@+id/tvCargo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ActionbarCargo"

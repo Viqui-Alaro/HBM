@@ -33,7 +33,7 @@ public class CalendarioMain extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_calendario_main, container, false);
 
-        toolbar = (Toolbar)rootView.findViewById(R.id.appbarMain);
+        toolbar = (Toolbar)rootView.findViewById(R.id.appbarCalendarioMain);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
         /** end after 1 month from now */

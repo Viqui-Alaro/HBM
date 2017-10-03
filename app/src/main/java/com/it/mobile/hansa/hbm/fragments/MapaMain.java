@@ -9,6 +9,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +37,7 @@ public class MapaMain extends Fragment implements OnMapReadyCallback {
     private static final int LOCATION_REQUEST_CODE = 7;
     private MapView mMapView;
     private GoogleMap mGoogleMap = null;
+    private Toolbar toolbar;
 
     public MapaMain() {
     }
@@ -44,12 +47,9 @@ public class MapaMain extends Fragment implements OnMapReadyCallback {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_mapa_main, container, false);
-        //SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
 
         mMapView = (MapView) view.findViewById(R.id.Map);
-
         mMapView.onCreate(savedInstanceState);
-
         mMapView.onResume(); // needed to get the map to display immediately
 
         try {
@@ -59,6 +59,10 @@ public class MapaMain extends Fragment implements OnMapReadyCallback {
         }
 
         mMapView.getMapAsync(this);
+
+        toolbar = (Toolbar)view.findViewById(R.id.appbarMapaMain);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+
         return view;
 
     }

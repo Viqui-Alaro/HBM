@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--tools:context="com.it.mobile.hansa.hbm.fragments.MapaMain"-->
-
+    <include
+        android:id="@+id/appbarMapaMain"
+        layout="@layout/toolbar_main" />
 
 <com.google.android.gms.maps.MapView
     android:id="@+id/Map"

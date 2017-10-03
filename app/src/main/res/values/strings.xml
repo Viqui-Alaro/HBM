@@ -7,4 +7,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ActionbarUsuario">Juan Carlos Trujillo</string>
     <string name="ActionbarCargo">Ejecutivo de ventas</string>
+    <string name="action_add">Buscar</string>
+    <string name="action_notification">Notificacion</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_about">Acerca de</string>
 </resources>
