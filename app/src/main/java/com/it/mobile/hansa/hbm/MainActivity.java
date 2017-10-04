@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     private MainAdapter mMainAdapter;
     private ViewPager mViewPager;
-
+//
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
