@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HBM.iml" filepath="$PROJECT_DIR$/HBM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HBM.iml" filepath="$PROJECT_DIR$/HBM.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/horizontalcalendar/horizontalcalendar.iml" filepath="$PROJECT_DIR$/horizontalcalendar/horizontalcalendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/horizontalcalendar/horizontalcalendar.iml" filepath="$PROJECT_DIR$/horizontalcalendar/horizontalcalendar.iml" />
     </modules>
   </component>
